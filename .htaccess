@@ -1,0 +1,30 @@
+#you can use this to disable access to directory or file 
+
+
+
+Options -Indexes
+
+RewriteRule ^config/config.php?$ - [F,L]
+ErrorDocument 403 default
+
+
+RewriteRule ^templates/?$ - [F,L]
+ErrorDocument 403 default
+
+RewriteRule ^frontend/?$ - [F,L]
+ErrorDocument 403 default
+
+
+RewriteRule ^views/?$ - [F,L]
+ErrorDocument 403 default
+
+
+
+RewriteRule ^.htaccess/?$ - [F,L]
+ErrorDocument 403 default
+
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf)$
+RewriteRule (.*) routes.php [QSA,L]
