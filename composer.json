@@ -1,0 +1,13 @@
+{
+    "name": "usman/bird",
+    "description": "A simple and micro php framework",
+    "type": "framework",
+    "license": "apache",
+    "authors": [
+        {
+            "name": "digital-techub"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
