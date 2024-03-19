@@ -1,0 +1,13 @@
+{
+    "name": "bird/bird",
+    "description": "A simple and micro php framework",
+    "type": "framework",
+    "license": "apache license",
+    "authors": [
+        {
+            "name": "digital-techub"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
